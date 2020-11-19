@@ -44,10 +44,14 @@ sudo apt install php-mysql
 
 sudo service apache2 restart
 
+=========permission site====================
+
 https://www.raspberrypi.org/forums/viewtopic.php?t=190513
 $ sudo usermod -a -G gpio www-data
 $ sudo groups www-data
 $ sudo service apache2 restart
+
+=========permission site====================
 
 
 
@@ -69,6 +73,13 @@ CREATE TABLE device(
 
 insert into device (nm_device,ds_estado_device,ds_pino,ds_bit)
 values('Sala','0',7,'0');
+
+insert into device (nm_device,ds_estado_device,ds_pino,ds_bit)
+values('Quarto','0',11,'0');
+
+insert into device (nm_device,ds_estado_device,ds_pino,ds_bit)
+values('Quintal','0',12,'0');
+
 
 CREATE TABLE Config(
     id_config INT NOT NULL AUTO_INCREMENT,
