@@ -57,9 +57,11 @@ $ sudo service apache2 restart
 
 ========MYSQL======================================
 
-
-
-
+======== expor localhost na internet de graça para testes ========
+https://dev.to/giorgosk/expose-your-local-web-server-to-the-world-using-localhost-run-or-serveo-net-l83
+https://dashboard.ngrok.com/get-started/tutorials
+ngrok http http://192.168.0.15:80
+======== expor localhost na internet de graça para testes ========
 
 
 CREATE TABLE device(
@@ -79,6 +81,12 @@ values('Quarto','0',11,'0');
 
 insert into device (nm_device,ds_estado_device,ds_pino,ds_bit)
 values('Quintal','0',12,'0');
+
+
+
+insert into device (nm_device,ds_estado_device,ds_pino,ds_bit)
+values('Ventilador','0',6,'0');
+
 
 
 CREATE TABLE Config(
